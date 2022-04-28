@@ -1,0 +1,5 @@
+.item__price_decor {
+    text-decoration: line-through;
+    color: rgb(229, 192, 229);
+    grid-area: old-price;
+}

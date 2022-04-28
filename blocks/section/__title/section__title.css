@@ -1,0 +1,25 @@
+.section__title {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 20px;
+    padding-top: 80px;
+    text-align: center;
+    line-height: 1.15;
+    font-size: 48px;
+    font-weight: bold;
+    font-family: 'Mon', Georgia, 'Times New Roman', Times, serif;
+}
+
+@media screen and (max-width: 767px) {
+    .section__title {
+       font-size: 36px;
+    }
+ }
+
+ @media screen and (max-width: 498px) {
+    .section__title {
+       font-size: 28px;
+        padding-top: 40px;
+    }
+ }

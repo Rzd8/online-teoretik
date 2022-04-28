@@ -1,0 +1,28 @@
+.prices {
+    max-width: 90%;
+    margin: 51px auto 0;
+    display: grid;
+    gap: 17px 20px;
+    grid-template-columns: repeat(4, 3fr);
+    justify-items: center;
+    text-align: center;
+    padding: 0;
+}
+
+@media screen and (max-width: 1023px) {
+    .prices {
+    grid-template-columns: repeat(3, 2fr);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .prices {
+    grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 528px) {
+    .prices {
+    grid-template-columns: 1fr;
+    }
+}

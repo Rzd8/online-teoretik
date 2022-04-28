@@ -1,0 +1,15 @@
+.item__text {
+    grid-area: text;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 18px;
+    font-size: calc( (100vw - 320px)/(1280 - 320) * (18 - 12) + 12px);
+    line-height: 1.5;
+}
+
+
+@media screen and (max-width: 767px) {
+    .item__text {
+        font-size: 12px;
+    }
+}

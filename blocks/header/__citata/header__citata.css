@@ -1,0 +1,9 @@
+.header__citata {
+    background-color: rgba(0, 0, 0, .5);
+    padding: 150px 50px;
+    font-size: 24px;
+    text-align: start;
+    font-family: 'Mon', Georgia, 'Times New Roman', Times, serif;
+    margin: 0 auto;
+    font-weight: 300;
+}

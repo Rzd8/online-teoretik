@@ -1,0 +1,9 @@
+.price__title {
+    font-size: 28px;
+    color: black;
+    margin: 0 auto;
+    border-bottom: 1px solid black;
+    padding: 10px 10px;
+    font-family: 'Bebas', 'Inter', Arial, Helvetica, sans-serif;
+}
+  

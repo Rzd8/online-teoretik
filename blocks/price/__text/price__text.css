@@ -1,0 +1,8 @@
+.price__text {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 10px 10px;
+    text-align: center;
+    line-height: 1.5;
+    max-height: 250px;
+}

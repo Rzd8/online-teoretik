@@ -1,0 +1,14 @@
+.price__content {
+    position: relative;
+    background-color: #ffffff;
+    color: black;
+}
+  
+.price__content li {
+    border-bottom: 1px solid #a1a1a1;
+    padding: 10px 0;
+}
+  
+.price__content li:last-child {
+    border: none;
+}

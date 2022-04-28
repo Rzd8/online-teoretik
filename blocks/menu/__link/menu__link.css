@@ -1,0 +1,25 @@
+.menu__link {
+    margin: 0;
+    color: #fff;
+    font-size: 22px;
+    text-decoration: none;
+    font-size: calc( (100vw - 320px)/(1280 - 320) * (22 - 14) + 14px);
+    float: right;  
+    text-align: center;
+    display: block;
+    width: 25%;
+    font-family: 'Bebas', Arial, Helvetica, sans-serif;
+    transition: .2s;
+    padding: 20px 0;
+} 
+
+.menu__link:hover {  
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 767px) { 
+    .menu-link { 
+        font-size: 14px; 
+        line-height: 1; 
+    } 
+} 

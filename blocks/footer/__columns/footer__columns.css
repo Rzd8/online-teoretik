@@ -1,0 +1,13 @@
+.footer__columns {
+    width: 90%;
+    display: grid;
+    justify-content: space-between;
+    margin: 0 auto;
+    grid-template-areas: "footer_logo . info social";
+}
+
+@media screen and (max-width: 767px) {
+    .footer__columns {
+    grid-template-areas: "footer_logo" "info" "social";
+    }
+}

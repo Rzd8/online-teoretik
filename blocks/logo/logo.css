@@ -1,0 +1,14 @@
+ .logo {
+     background-image: url(../../images/logo1.png);
+     margin: 0;
+     width: 12vw;
+     height: calc(12vw * .35);
+     background-size: cover;
+     min-width: 120px;
+     min-height: 42px;
+     transition: 1s;
+ }
+ 
+ .logo:hover {
+     transform: scale(1.2);
+ }

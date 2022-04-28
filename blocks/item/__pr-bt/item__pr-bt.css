@@ -1,0 +1,11 @@
+.item__pr-bt {
+    display: flex;
+    width: 60%;
+    margin: 0 auto 0 10%;
+}
+
+@media screen and (max-width: 767px) {
+    .item__pr-bt {
+        width: 80%;
+    }
+}

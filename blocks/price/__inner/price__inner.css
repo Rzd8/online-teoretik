@@ -1,0 +1,7 @@
+.price__inner.css {
+    background: #fff;
+  margin: 0 auto;
+  min-width: 280px;
+  max-width: 100%;
+  position:relative;
+}

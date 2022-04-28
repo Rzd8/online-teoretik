@@ -1,0 +1,25 @@
+.add-button {
+    background-color: #8c99a499;
+    width: 120px;
+    height: 40px;
+    border: 1px solid #669a9a;
+    box-sizing: border-box;
+    border-radius: 2px;
+    grid-area: button;
+    cursor: pointer;
+    font-size: 24px;
+    margin: 0 auto;
+    font-family: 'Bebas', Arial, Helvetica, sans-serif;
+    font-weight: 900;
+}
+
+.add-button:hover {
+    opacity: .6;
+}
+
+@media screen and (max-width: 767px) { 
+    .add-button { 
+        font-size: 18px;
+        max-width: 60%;
+    } 
+} 

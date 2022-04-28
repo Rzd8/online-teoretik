@@ -1,0 +1,18 @@
+.place-container__text-paragraph {
+    font-size: 1.125rem;
+    line-height: 1.63;
+    margin: 0 0 26px;
+}
+
+@media screen and (max-width: 768px) {
+    .place-container__text-paragraph {
+        margin-bottom: 25px;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .place-container__text-paragraph {
+        max-width: 90%;
+    }
+}
