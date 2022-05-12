@@ -9,14 +9,14 @@
 </head>
 
 <body class="page">
-    <header class="header">
+    <header class="header header_main">
         <div class="header__top">   
             <a href="./index.html" class="logo"></a>
             <nav class="menu">
                 <ul class="menu__links">
-                    <li><a class="menu__link" href="./pages/allcurses.html">Курсы</a></li>
-                    <li><a class="menu__link" href="#">Тренажер</a></li>
-                    <li><a class="menu__link" href="#">Тесты</a></li>
+                    <li><a class="menu__link" href="#courses">Курсы</a></li>
+                    <li><a class="menu__link" href="./pages/trenager.html">Тренажер</a></li>
+                    <li><a class="menu__link" href="./pages/testy.html">Тесты</a></li>
                     <li><a class="menu__link" href="#">Блог</a></li>
                 </ul>
             </nav>
@@ -27,7 +27,7 @@
         <h1 class="header__title" >Обучение теории музыки и&nbsp;сольфеджио</h1>
     </header> 
     <main class="content">
-        <section class="section">
+        <section class="section" id="courses">
             <h2 class="section__title section__title_theme_bright">Индивидуальные уроки</h2>
             <p class="section__subtitle section__subtitle_theme_bright">по направлениям</p>
             <ul class="prices">
@@ -78,7 +78,7 @@
                 </div>
             </div>    
         </section>
-        <section class="begin">
+        <section class="begin" id="prices">
             <h1 class="begin__title">Начни прямо сейчас!</h1>
             <h2 class="begin__subtitle">Выбери подходящий курс и начни заниматься уже сегодня. При должном усердии результат не заставит себя ждать.</h2>
             <div class="prices">
@@ -202,7 +202,7 @@
             </div>
             <h2 class="section__subtitle">Только для жителей города Набережные Челны действует постоянная скидка 20% на уроки в оффлайне.</h2>
         </section>
-        <section class="section section_red">
+        <section class="section section_red" id="form">
             <h1 class="section__title">Напишите нам!</h1>
             <div class="svyaz">
             <input type="text" name="name" placeholder="*Ваше имя" class="popup__form-input" required>
@@ -231,75 +231,6 @@
                 </form>
             </div>
         </div>
-
-            <!-- <ul class="disc">
-                <li>
-                    <a href="https://arzamas.academy/" target="_blank"><img class="resources__logo" src="images/logo/resources-arzamas.svg" alt="арзамас"></a>
-                </li>
-                <li>
-                    <a href="https://nplus1.ru/" target="_blank"><img class="resources__logo" src="images/logo/resources-n1.svg" alt="эн плюс один"></a>
-                </li>
-                <li>
-                    <a href="https://www.strelka.com/ru" target="_blank"><img class="resources__logo" src="images/logo/resources-strelka.svg" alt="стрелка"></a>
-                </li>
-                <li>
-                    <a href="https://polka.academy/" target="_blank"><img class="resources__logo" src="images/logo/resources-polka.svg" alt="полка"></a>
-                </li>
-            </ul> -->
-             
-          
-            <!-- <article class="place-container">
-                <a class="place-container__title">"Абитуриент"</a>
-                <div class="place-container__website">
-                    <h3 class="place-container__url-heading">
-                        <button class="add-button" type="button">Записаться!</button> 
-                    </h3>
-                    <a class="place-container__link link" href="./pages/Abiturient.html" target="_blank">Подробнее</a>
-                </div>
-                <img class="place-container__image" src="./images/Interval.jpg" alt="Абитуриент">
-                <div class="place-container__text">
-                    <p class="place-container__text-paragraph">Вступительные испытания на 
-                        любую музыкальную специальность включают в себя профессиональное испытание по сольфеджио и 
-                        теории музыки (или гармонии).  
-                        Курс "Абитуриент" создан для подготовки к вступительным экзаменам по сольфеджио, гармонии или теории музыки. Материал подбирается индивидуально в соответствии требованиям того учебного заведения, куда вы собираетесь поступать, а также по тем формам работ, которые вызывают наибольшие трудности. </p>
-                </div>
-            </article>
-            <article class="place-container">
-                <a class="place-container__title">"Экзамен на носу"</a>
-                <div class="place-container__website">
-                    <h3 class="place-container__url-heading">
-                        <button class="add-button" type="button">Записаться!</button> 
-                    </h3>
-                    <a class="place-container__link link" href="./Ekzamen.html" target="_blank">Подробнее</a>
-                </div>
-                <img class="place-container__image" src="./images/image-1.jpg" alt="Абитуриент">
-                <div class="place-container__text">
-                    <p class="place-container__text-paragraph">Скоро экзамен? Часто при подготовке к экзаменам возникает 
-                        необходимость обратиться за помощью к знающему человеку. Под чутким руководством опытного педагога-теоретика
-                        подготовка к экзамену по сольфеджио и другим теоретическим дисциплинам пройдет легче и быстрее. Курс
-                         "Экзамен на носу" включает в себя 5 индивидуальных онлайн-уроков с преподавателем, что поможет устранить 
-                         пробелы в теоретических знаниях, закрепить и улучшить свои навыки и умения в различных формах практических работ 
-                         по сольфеджио, гармонии, теории музыки, музыкальной грамоте и другим музыкально-теоретическим дисциплинам. 
-                         Материал к каждому занятию подбирается индивидуально. </p>
-                </div>
-            </article>
-            <article class="place-container">
-                <a class="place-container__title">"Никогда не поздно"</a>
-                <div class="place-container__website">
-                    <h3 class="place-container__url-heading">
-                        <button class="add-button" type="button">Записаться!</button> 
-                    </h3>
-                    <a class="place-container__link link" href="./Ekzamen.html" target="_blank">Подробнее</a>
-                </div>
-                <img class="place-container__image" src="./images/image-1.jpg" alt="Абитуриент">
-                <div class="place-container__text">
-                    <p class="place-container__text-paragraph">В музыкальную школу поступать уже поздно, а тяга к прекрасному, увлечение
-                        музыкой полностью поглотило все ваши мысли? Курс "Никогда не поздно" рассчитан на освоение азов нотной грамоты с 
-                        нуля. Включает  в себя 8 индивидуальных онлайн-уроков с преподавателем. На курсе вы получите первоначальные знания по нотной грамоте, познакомитесь 
-                        с ритмическими длительностями, научитесь петь и играть простые мелодии на фортепиано. 
-                        Материал к каждому занятию подбирается индивидуально.</p>
-                </div>
-            </article> -->
     </main>
     <footer class="footer">
         <div class="footer__columns">
@@ -310,9 +241,9 @@
                 <h2 class="footer__column-heading">О сайте</h2>
                 <ul class="footer__column-links">
                     <li><a class="footer__column-link" href="#">Главная</a></li>
-                    <li><a class="footer__column-link" href="#">Курсы</a></li>
-                    <li><a class="footer__column-link" href="#">Цены</a></li>
-                    <li><a class="footer__column-link" href="#">Запись</a></li>
+                    <li><a class="footer__column-link" href="#courses">Курсы</a></li>
+                    <li><a class="footer__column-link" href="#prices">Цены</a></li>
+                    <li><a class="footer__column-link" href="#form">Запись</a></li>
                 </ul>
             </nav>
             <nav class="footer__column footer__column_content_social">

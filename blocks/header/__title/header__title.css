@@ -9,7 +9,7 @@
    text-align: end;
    line-height: 1.4;
    background-color: rgba(0, 0, 0, .5);
-   text-shadow: 3px 2px 15px rgba(150, 150, 150, 1);
+   text-shadow: 3px 2px 15px rgba(100, 100, 100, 1);
 }
 
 @media screen and (max-width: 767px) {

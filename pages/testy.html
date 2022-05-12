@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Онлайн теоретик</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body class="page">
+    <header class="header header_testy">
+        <div class="header__top">   
+            <a href="./index.html" class="logo"></a>
+            <nav class="menu">
+                <ul class="menu__links">
+                    <li><a class="menu__link" href="../index.html#courses">Курсы</a></li>
+                    <li><a class="menu__link" href="./trenager.html">Тренажер</a></li>
+                    <li><a class="menu__link" href="./testy.html">Тесты</a></li>
+                    <li><a class="menu__link" href="#">Блог</a></li>
+                </ul>
+            </nav>
+        </div>
+        <h1 class="header__title"> <br>Проверь себя!</h1>
+    </header> 
+    <main class="content">
+        <section class="section">
+            <h2 class="section__title section__title_theme_bright">Тесты на музыкальную грамотность</h2>
+            <p class="section__subtitle section__subtitle_theme_bright">онлайн</p>
+            <ul class="testy">
+                <li class="testy__card"><a href="./test.html" class="link">
+                    <h3 class="testy__title">Тест "Интервалы"</h3>
+                    <p class="testy__text">Уровень сложности: 4 класс музыкальной школы</p></a>
+                </li>
+                <li class="testy__card">
+                    <h3 class="testy__title">Тест "Определи тональность"</h3>
+                    <p class="testy__text">Уровень сложности: 5 класс музыкальной школы</p>
+                </li>
+                <li class="testy__card">
+                    <h3 class="testy__title">Тест "Знаешь ли ты тональности?"</h3>
+                    <p class="testy__text">Уровень сложности: 7 класс музыкальной школы</p>
+                </li>
+                <li class="testy__card">
+                    <h3 class="testy__title">Тест "Интервалы"</h3>
+                    <p class="testy__text">Уровень сложности: 4 класс музыкальной школы</p>
+                </li>
+            </ul>
+        </section>
+        <section class="section section_white">
+            <h1 class="section__title">Спецпредложения!</h1>
+            <h2 class="section__subtitle">До 30 июня 2022 года доступны специальные авторские курсы:</h2>
+            <div class="carusel">
+                <figure class="cards mt-3">
+                  <div class="cards__content">
+                      <div class="cards__item d-flex align-items-center justify-content-center">
+                        <span class="h1">
+                          <div class="item" href="#">
+                              <h2 class="item__title">Курс &laquo;Экзамен на носу&raquo;</h2>
+                              <h3 class="item__subtitle">5 онлайн-уроков с преподавателем</h3>
+                              <p class="item__text">Скоро экзамен? Запишись на ускоренный курс по подготовке к экзамену по сольфеджио и(или) теории музыки/гармонии</p>
+                              <div class="item__pr-bt"><p class="item__price">4500 рублей</p>
+                              <button class="add-button">Записаться!</button></div>
+                          </div>
+                        </span>
+                      </div>
+                      <div class="cards__item d-flex align-items-center justify-content-center">
+                          <span class="h1">
+                            <div class="item" href="./pages/Abiturient.html">
+                                <h2 class="item__title">Курс &laquo;Абитуриент&raquo;</h2>
+                                <h3 class="item__subtitle">5 онлайн-уроков с преподавателем</h3>
+                                <p class="item__text">Подготовка к поступлению в колледжи и вузы по сольфеджио и другим музыкально-теоретическим дисциплинам.</p>
+                                <div class="item__pr-bt"><p class="item__price">4590 рублей</p>
+                                <button class="add-button" type="button">Записаться!</button></div>
+                            </div>
+                          </span>
+                      </div>
+                      <div class="cards__item d-flex align-items-center justify-content-center">
+                          <span class="h1">
+                            <div class="item" href="#">
+                                <h2 class="item__title">Курс &laquo;Никогда не поздно&raquo;</h2>
+                                <h3 class="item__subtitle">10 онлайн-уроков с преподавателем</h3>
+                                <p class="item__text">Пора начинать воплощать свои мечты.
+                                    Курс рассчитан на освоение азов нотной грамоты с нуля.
+                                </p>
+                                <div class="item__pr-bt"><p class="item__price">8900 рублей</p>
+                                <button class="add-button" type="button">Записаться!</button></div>
+                            </div>
+                          </span>
+                      </div>
+                  </div>
+                </figure>
+            </div>
+            <h2 class="section__subtitle">Только для жителей города Набережные Челны действует постоянная скидка 20% на уроки в оффлайне.</h2>
+        </section>
+        <section class="section section_red" id="form">
+            <h1 class="section__title">Записывайтесь на индивидуальный урок!</h1>
+            <div class="svyaz">
+            <input type="text" name="name" placeholder="*Ваше имя" class="popup__form-input" required>
+            <input type="tel" name="telefon" placeholder="Номер телефона" class="popup__form-input" required>
+            <input type="email" name="E-mail" placeholder="*E-mail" class="popup__form-input" required>
+            <textarea type="text" name="Others" placeholder="Дополнительная информация (ваш уровень музыкальной подготовки, какой предмет нужно подтянуть)" class="popup__form-input"></textarea>
+            <input type="checkbox" name="soglasie" checked required><span class="popup__form-input popup__form-input_border_none">Согласен(-на) на обработку и хранение моих персональных данных</span>
+            <button class="popup__form-submit" type="submit">
+                Отправить
+            </button>
+            </div>
+        </section>
+        <div class="popup popup_hidden">
+            <div class="popup__container">
+                <form class="popup__form" name="edit-profile-form">
+                    <button class="popup__close" type="button" title="закрыть"></button>
+                    <h2 class="popup__form-header">Запись на занятие</h2>
+                    <input type="text" name="name" placeholder="*Ваше имя" class="popup__form-input" required>
+                    <input type="tel" name="telefon" placeholder="Номер телефона" class="popup__form-input" required>
+                    <input type="email" name="E-mail" placeholder="*E-mail" class="popup__form-input" required>
+                    <textarea type="text" name="Others" placeholder="Дополнительная информация (ваш уровень музыкальной подготовки, какой предмет нужно подтянуть)" class="popup__form-input"></textarea>
+                    <br><input type="checkbox" name="soglasie" checked required><span class="popup__form-input popup__form-input_border_none">Согласен(-на) на обработку и хранение моих персональных данных</span>
+                    <button class="popup__form-submit" type="submit">
+                        Отправить
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__columns">
+            <div class="footer__column footer__column_content_copyright">
+                <div class="logo logo_place_footer"></div>
+            </div>
+            <nav class="footer__column footer__column_content_info">
+                <h2 class="footer__column-heading">О сайте</h2>
+                <ul class="footer__column-links">
+                    <li><a class="footer__column-link" href="#">Главная</a></li>
+                    <li><a class="footer__column-link" href="#courses">Курсы</a></li>
+                    <li><a class="footer__column-link" href="#prices">Цены</a></li>
+                    <li><a class="footer__column-link" href="#form">Запись</a></li>
+                </ul>
+            </nav>
+            <nav class="footer__column footer__column_content_social">
+                <h2 class="footer__column-heading">Соцсети</h2>
+                <ul class="footer__column-links">
+                    <li>
+                        <a class="footer__column-link" href="https://vk.com/" target="_blank">
+                            <img class="footer__social-icon" src="images/vk_color_white.svg" alt="ВКонтакте">ВКонтакте</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <p class="footer__author">&copy; 2022. Онлайн теоретик</p>
+    </footer>
+    <script src="script/index.js"></script>
+</body>
+</html>

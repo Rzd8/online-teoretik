@@ -1,0 +1,7 @@
+.testy {
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto 0;
+    width: 85%;
+    padding: 0;
+}

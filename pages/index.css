@@ -3,6 +3,8 @@
 @import url(../blocks/page/page.css);
 @import url(../blocks/content/content.css);
 @import url(../blocks/header/header.css);
+@import url(../blocks/header/_main/header_main.css);
+@import url(../blocks/header/_testy/header_testy.css);
 @import url(../blocks/header/__citata/header__citata.css);
 @import url(../blocks/header/__top/header__top.css);
 @import url(../blocks/header/__nav/header__nav.css);
@@ -17,6 +19,7 @@
 @import url(../blocks/section/__title/_theme/section__title_theme_bright.css);
 @import url(../blocks/section/__title/section__title.css);
 @import url(../blocks/section/section.css);
+@import url(../blocks/question/question.css);
 @import url(../blocks/section/_white/section_white.css);
 @import url(../blocks/section/_red/section_red.css);
 @import url(../blocks/svyaz/svyaz.css);
@@ -34,6 +37,7 @@
 @import url(../blocks/item/__pr-bt/item__pr-bt.css);
 @import url(../blocks/add-button/add-button.css);
 @import url(../blocks/add-button/_block_price/add-button_block_price.css);
+@import url(../blocks/button-otvet/button-otvet.css);
 @import url(../blocks/cards/cards.css);
 @import url(../blocks/cards/__content/cards__content.css);
 @import url(../blocks/cards/__item/cards__item.css);
@@ -81,6 +85,14 @@
 @import url(../blocks/kurs/__image/kurs__image.css);
 @import url(../blocks/title/title.css);
 @import url(../blocks/text/text.css);
+@import url(../blocks/testy/testy.css);
+@import url(../blocks/testy/__card/testy__card.css);
+@import url(../blocks/testy/__title/testy__title.css);
+@import url(../blocks/testy/__text/testy__text.css);
+@import url(../blocks/otvety/otvety.css);
+@import url(../blocks/otvet/otvet.css);
+@import url(../blocks/link/link.css);
+@import url(../blocks/audio/audio.css);
 @import url(../blocks/carusel/carusel.css);
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__columns/footer__columns.css);
