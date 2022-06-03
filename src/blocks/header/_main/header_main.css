@@ -1,4 +1,4 @@
 .header_main {
-    background: linear-gradient( to bottom right, rgb(46, 1, 1), rgb(46, 1, 1, 0.1)), url(../../../images/roza-header.jpg);
+    background: linear-gradient( to bottom right, rgb(0, 0, 0), 60%, rgba(255, 255, 255, 0)), url(../../../images/Piano.jpg);
     background-size: cover;
 }

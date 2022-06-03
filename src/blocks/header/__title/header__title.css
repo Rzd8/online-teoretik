@@ -1,10 +1,12 @@
 @keyframes slidein {
    from {
-     margin-left: 100%;
+     transform: scale(0.5);
    }
- 
+   50% {
+      transform: scale(1.2);
+   }
    to {
-     margin-left: 10%;
+      transform: scale(1);
    }
 }
  
@@ -16,15 +18,14 @@
    margin: 0 auto;
    text-align: end;
    line-height: 1.4;
-   text-shadow: 3px 2px 15px rgba(100, 100, 100, 1);
-   padding-top: 200px;
-   animation: slidein 3s ease-in-out;
+   padding-top: 150px;
+   animation: slidein 1s ease-in-out;
 }
 
 @media screen and (max-width: 1200px) {
    .header__title {
-      padding-top: 150px;
       font-size: 56px;
+      padding-top: 100px;
    }
 }
 

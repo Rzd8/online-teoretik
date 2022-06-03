@@ -2,7 +2,7 @@ import './index.css';
 import { FormValidator, PopupWithForm, Section, UserInfo} from "../components";
 import {
     formConfig,
-    placeAddButton,
+    AddButton,
     userInfoInputSelectors,
     userInfoSelectors
 } from "../utils/constants.js";
@@ -26,30 +26,29 @@ import '../pages/index.css';
 
     const formValidators = {};
     
-    // const placeList = new Section({
-    //         items: initialPlaces.reverse(),
-    //         renderer: createCard
-    //     },
-    //     '.places');
-    // placeList.renderItems();
+    const placeList = new Section({
+            items: initialPlaces.reverse(),
+            renderer: createCard
+        },
+        '.places');
+    placeList.renderItems();
 
-    // const userInfo = new UserInfo(userInfoSelectors);
-    // const profileEditForm = new PopupWithForm(
-    //     '#popup__edit-profile',
-    //     (inputsData) => userInfo.setUserInfo(inputsData));
-    // profileEditForm.setEventListeners();
-    // profileEditButton.addEventListener('click', () => {
-    //     setUserInfoInputs(userInfo.getUserInfo());
-    //     formValidators['edit_profile'].resetValidation();
-    //     profileEditForm.open();
-    // });
+    const userInfo = new UserInfo(userInfoSelectors);
+    const profileEditForm = new PopupWithForm(
+        '#popup__edit-profile',
+        (inputsData) => userInfo.setUserInfo(inputsData));
+    profileEditForm.setEventListeners();
+    profileEditButton.addEventListener('click', () => {
+        setUserInfoInputs(userInfo.getUserInfo());
+        formValidators['edit_profile'].resetValidation();
+        profileEditForm.open();
+    });
 
     const addCardForm = new PopupWithForm(
-        '#popup__add',
-        ({place_name: title, place_link: link}) => createCard({title, link}));
+        '#popup__add')
 
     addCardForm.setEventListeners();
-    placeAddButton.addEventListener('click',
+    addButton.addEventListener('click',
         () => {
             formValidators['add'].resetValidation();
             addCardForm.open();

@@ -1,6 +1,5 @@
 .item__title {
     font-size: 54px;
-    font-size: calc((100vw - 320px)/(1280 - 320) * (54 - 24) + 24px);
     font-family: 'Bebas', 'Inter', Arial, Helvetica, sans-serif;
     padding-top: 8%;
     width: 80%;
@@ -9,10 +8,8 @@
 }
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
     .item__title {
-        font-size: 24px;
-        padding-top: 20%;
-        width: 94%;
+        font-size: 40px;
     }
 }

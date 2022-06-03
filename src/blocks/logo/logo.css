@@ -4,8 +4,8 @@
      width: 12vw;
      height: calc(12vw * .35);
      background-size: cover;
-     min-width: 120px;
-     min-height: 42px;
+     min-width: 100px;
+     min-height: 35px;
      transition: 1s;
  }
  

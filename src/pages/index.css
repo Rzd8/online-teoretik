@@ -24,6 +24,10 @@
 @import url(../blocks/section/_red/section_red.css);
 @import url(../blocks/section/_gradient/section_gradient.css);
 @import url(../blocks/svyaz/svyaz.css);
+@import url(../blocks/svyaz/__form-input/svyaz__form-input.css);
+@import url(../blocks/svyaz/__form-input/__form-input_border_none/svyaz__form-input_border_none.css);
+@import url(../blocks/svyaz/__form-submit/svyaz__form-submit.css);
+@import url(../blocks/svyaz/__form-input/__form-input_height_text-area/svyaz__form-input_height_text-area.css);
 @import url(../blocks/table/table.css);
 @import url(../blocks/table/__title/table__title.css);
 @import url(../blocks/table/__img/table__img.css);

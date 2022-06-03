@@ -14,9 +14,9 @@
             <nav class="menu">
                 <ul class="menu__links">
                     <li><a class="menu__link" href="#courses">Курсы</a></li>
-                    <li><a class="menu__link" href="./pages/trenager.html">Тренажер</a></li>
-                    <li><a class="menu__link" href="./pages/testy.html">Тесты</a></li>
-                    <li><a class="menu__link" href="#">Блог</a></li>
+                    <li><a class="menu__link" href="#svyaz">Запись</a></li>
+                    <li><a class="menu__link" href="#prices">Цены</a></li>
+                    <li><a class="menu__link" href="#">Главная</a></li>
                 </ul>
             </nav>
         </div>
@@ -159,7 +159,7 @@
             <h1 class="section__title">Спецпредложения!</h1>
             <h2 class="section__subtitle">До 30 июня 2022 года доступны специальные авторские курсы:</h2>
             <div class="carusel">
-                <figure class="cards mt-3">
+                <figure class="cards">
                   <div class="cards__content">
                       <div class="cards__item d-flex align-items-center justify-content-center">
                         <span class="h1">
@@ -204,12 +204,12 @@
         <section class="section section_red" id="svyaz">
             <h1 class="section__title">Напишите нам!</h1>
             <div class="svyaz">
-            <input type="text" name="name" minlength="2" maxlength="30" placeholder="*Ваше имя" class="popup__form-input" required>
-            <input type="tel" name="telefon" placeholder="Номер телефона" class="popup__form-input" required>
-            <input type="email" name="email" placeholder="*E-mail" class="popup__form-input" required>
-            <textarea type="text" name="info" placeholder="Дополнительная информация (ваш уровень музыкальной подготовки, какой предмет нужно подтянуть)" class="popup__form-input"></textarea>
-            <input type="checkbox" name="soglasie" checked required><span class="popup__form-input popup__form-input_border_none">Согласен(-на) на обработку и хранение моих персональных данных</span>
-            <button class="popup__form-submit" type="submit">
+            <input type="text" name="name" minlength="2" maxlength="30" placeholder="*Ваше имя" class="svyaz__form-input" required>
+            <input type="tel" name="telefon" placeholder="Номер телефона" class="svyaz__form-input" required>
+            <input type="email" name="email" placeholder="*E-mail" class="svyaz__form-input" required>
+            <textarea type="text" name="info" placeholder="Дополнительная информация (ваш уровень музыкальной подготовки, какой предмет нужно подтянуть)" class="svyaz__form-input"></textarea>
+            <span style="padding-top: 10px;"><input type="checkbox" name="soglasie" checked required><span class="svyaz__form-input svyaz__form-input_border_none">Согласен(-на) на обработку и хранение моих персональных данных</span></span>
+            <button class="svyaz__form-submit" type="submit">
                 Отправить
             </button>
             </div>
@@ -278,7 +278,7 @@
                     <li><a class="footer__column-link" href="#">Главная</a></li>
                     <li><a class="footer__column-link" href="#courses">Курсы</a></li>
                     <li><a class="footer__column-link" href="#prices">Цены</a></li>
-                    <li><a class="footer__column-link" href="#form">Запись</a></li>
+                    <li><a class="footer__column-link" href="#svyaz">Запись</a></li>
                 </ul>
             </nav>
             <nav class="footer__column footer__column_content_social">
@@ -287,6 +287,10 @@
                     <li>
                         <a class="footer__column-link" href="https://vk.com/" target="_blank">
                             <img class="footer__social-icon" src="<%=require('./images/vk_color_white.svg')%>" alt="ВКонтакте">ВКонтакте</a>
+                    </li>
+                    <li>
+                        <a class="footer__column-link" href="https://telegram.org/" target="_blank">
+                            <img class="footer__social-icon" style="background-color: rgba(0, 0, 0, 0.5);" src="<%=require('./images/telegram-logo.png')%>" alt="Телеграм">Telegram</a>
                     </li>
                 </ul>
             </nav>
