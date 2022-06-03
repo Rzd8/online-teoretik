@@ -1,9 +1,8 @@
 .otvet {
-    background-color: rgba(147, 173, 252, 0.3);
+    background-color: transparent;
     border: solid 1px rgb(255, 255, 255);
     box-shadow: 3px 3px 8px rgba(121, 82, 82, 0.8);
-    padding: 10px 0 3px 15px;
-    margin-top: 30px;
+    margin-top: 5px;
     border-radius: 10px;
     font-family: 'Mon', Helvetica, sans-serif;
     transition: .3s;

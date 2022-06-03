@@ -28,7 +28,7 @@
     </header> 
     <main class="content">
         <section class="section" id="courses">
-            <h2 class="section__title section__title_theme_bright">Индивидуальные уроки</h2>
+            <h2 class="section__title">Индивидуальные уроки</h2>
             <p class="section__subtitle section__subtitle_theme_bright">по направлениям</p>
             <ul class="prices">
                 <li class="table__card">
@@ -55,28 +55,28 @@
         </section>
         <section class="section section_white">
             <h2 class="section__title">Любой уровень музыкальной подготовки</h2>
-            <div class="prices">
-                <div class="table__card">
+            <ul class="prices">
+                <li class="table__card">
                     <img class="table__img table__img_size_letter" src="./images/book.png" alt="Иконка книжка">
                     <h3 class="table__title">Абитуриент</h3>
                     <p class="table__text">Подготовка к поступлению в ССУЗы и ВУЗы по музыкально-теоретическим дисциплинам</p>
-                </div>
-                <div class="table__card">
+                </li>
+                <li class="table__card">
                     <img class="table__img table__img_size_letter" src="./images/stud.png" alt="Иконка студент с книжкой">
                     <h3 class="table__title">Студент</h3>
                     <p class="table__text">Помощь в освоении материала, выполнении домашних заданий, подготовка к экзаменам</p>
-                </div>
-                <div class="table__card">
+                </li>
+                <li class="table__card">
                     <img class="table__img table__img_size_letter" src="./images/uchenik.png" alt="Иконка рюкзак ученика">
                     <h3 class="table__title">Учащийся музыкальной школы</h3>
                     <p class="table__text">Помощь в освоении материала, разбор проблемных моментов, развитие слуха</p>
-                </div>
-                <div class="table__card">
+                </li>
+                <li class="table__card">
                     <img class="table__img table__img_size_letter" src="./images/notes.png" alt="Иконка ноты">
                     <h3 class="table__title">Без музыкальной подготовки</h3>
                     <p class="table__text">Мечта открыть для себя мир музыки осуществима в любом возрасте</p>
-                </div>
-            </div>    
+                </li>
+            </ul>    
         </section>
         <section class="begin" id="prices">
             <h1 class="begin__title">Начни прямо сейчас!</h1>
@@ -209,12 +209,35 @@
             <input type="tel" name="telefon" placeholder="Номер телефона" class="popup__form-input" required>
             <input type="email" name="E-mail" placeholder="*E-mail" class="popup__form-input" required>
             <textarea type="text" name="Others" placeholder="Дополнительная информация (ваш уровень музыкальной подготовки, какой предмет нужно подтянуть)" class="popup__form-input"></textarea>
-            <input type="checkbox" name="soglasie" checked required><span class="popup__form-input popup__form-input_border_none">Согласен(-на) на обработку и хранение моих персональных данных</span>
+            <span class="popup__form-input popup__form-input_border_none"><input type="checkbox" name="soglasie" checked required>Согласен(-на) на обработку и хранение моих персональных данных</span>
             <button class="popup__form-submit" type="submit">
                 Отправить
             </button>
             </div>
         </section>
+        <div class="popup" id="popup__edit-profile">
+            <div class="popup__container">
+                <button class="popup__close" type="button" title="закрыть" aria-label="закрыть"></button>
+                <form class="form" name="edit_profile" novalidate>
+                    <h2 class="form__header">Редактировать профиль</h2>
+                    <fieldset class="form__set">
+                        <label class="form__field">
+                            <input class="form__input" name="profile-name" type="text" minlength="2" maxlength="40"
+                                   required>
+                            <span class="form__placeholder profile-name-input-placeholder">Имя:</span>
+                            <span class="form__input-error profile-name-input-error"></span>
+                        </label>
+                        <label class="form__field">
+                            <input class="form__input" name="profile-job" type="text" minlength="2" maxlength="200"
+                                   required>
+                            <span class="form__placeholder profile-job-input-placeholder">О себе:</span>
+                            <span class="form__input-error profile-job-input-error"></span>
+                        </label>
+                    </fieldset>
+                    <button class="form__submit" type="submit">Сохранить</button>
+                </form>
+            </div>
+        </div>
         <div class="popup popup_hidden">
             <div class="popup__container">
                 <form class="popup__form" name="edit-profile-form">
