@@ -1,0 +1,10 @@
+.price {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.1s;
+}
+
+.price:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 20px 10px rgb(103 125 143 / 15%);
+}

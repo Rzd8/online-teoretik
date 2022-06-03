@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Онлайн теоретик</title>
-    <link rel="stylesheet" href="./pages/index.css">
 </head>
 
 <body class="page">
@@ -27,32 +26,27 @@
         <h1 class="header__title" >Обучение теории музыки и&nbsp;сольфеджио</h1>
     </header> 
     <main class="content">
-<<<<<<< HEAD
         <section class="section" id="courses">
-            <h2 class="section__title section__title_theme_bright">Индивидуальные уроки</h2>
-=======
-        <section class="section">
-            <h2 class="section__title section__title_theme_bright" id="courses">Индивидуальные уроки</h2>
->>>>>>> 08bf03d54a8a9683a98fc189d8edc72da82ef03c
+            <h2 class="section__title">Индивидуальные уроки</h2>
             <p class="section__subtitle section__subtitle_theme_bright">по направлениям</p>
             <ul class="prices">
                 <li class="table__card">
-                    <img class="table__img" src="./images/diezy.jpg" alt="Ноты">
+                    <img class="table__img" src="<%=require('./images/diezy.jpg')%>" alt="Ноты">
                     <h3 class="table__title">Сольфеджио</h3>
                     <p class="table__text">Будем развивать музыкальный слух, чистоту интонации, чувство ритма, писать музыкальные диктанты, подбирать на слух</p>
                 </li>
                 <li class="table__card">
-                    <img class="table__img" src="./images/karandash.jpg" alt="Нотная бумага и карандаш">
+                    <img class="table__img" src="<%=require('./images/karandash.jpg')%>" alt="Нотная бумага и карандаш">
                     <h3 class="table__title">Теория музыки</h3>
                     <p class="table__text">Изучим строение ладов, интервалов, аккордов и многое другое</p>
                 </li>
                 <li class="table__card">
-                    <img class="table__img" src="./images/roza-sint.jpg" alt="Роза на синтезаторе">
+                    <img class="table__img" src="<%=require('./images/roza-sint.jpg')%>" alt="Роза на синтезаторе">
                     <h3 class="table__title">Гармония</h3>
                     <p class="table__text">Разберем сложные задачи, научимся гармонизовать мелодии, отработаем навыки игры на фортепиано</p>
                 </li>
                 <li class="table__card">
-                    <img class="table__img" src="./images/bemoli.jpg" alt="Ноты">
+                    <img class="table__img" src="<%=require('./images/bemoli.jpg')%>" alt="Ноты">
                     <h3 class="table__title">Музыкальная грамота</h3>
                     <p class="table__text">Изучим нотную грамоту, ритмические фигуры, базовые элементы музыкального языка с нуля</p>
                 </li>
@@ -60,28 +54,28 @@
         </section>
         <section class="section section_white">
             <h2 class="section__title">Любой уровень музыкальной подготовки</h2>
-            <div class="prices">
-                <div class="table__card">
-                    <img class="table__img table__img_size_letter" src="./images/book.png" alt="Иконка книжка">
+            <ul class="prices">
+                <li class="table__card">
+                    <img class="table__img table__img_size_letter" src="<%=require('./images/book.png')%>" alt="Иконка книжка">
                     <h3 class="table__title">Абитуриент</h3>
                     <p class="table__text">Подготовка к поступлению в ССУЗы и ВУЗы по музыкально-теоретическим дисциплинам</p>
-                </div>
-                <div class="table__card">
-                    <img class="table__img table__img_size_letter" src="./images/stud.png" alt="Иконка студент с книжкой">
+                </li>
+                <li class="table__card">
+                    <img class="table__img table__img_size_letter" src="<%=require('./images/stud.png')%>" alt="Иконка студент с книжкой">
                     <h3 class="table__title">Студент</h3>
                     <p class="table__text">Помощь в освоении материала, выполнении домашних заданий, подготовка к экзаменам</p>
-                </div>
-                <div class="table__card">
-                    <img class="table__img table__img_size_letter" src="./images/uchenik.png" alt="Иконка рюкзак ученика">
+                </li>
+                <li class="table__card">
+                    <img class="table__img table__img_size_letter" src="<%=require('./images/uchenik.png')%>" alt="Иконка рюкзак ученика">
                     <h3 class="table__title">Учащийся музыкальной школы</h3>
                     <p class="table__text">Помощь в освоении материала, разбор проблемных моментов, развитие слуха</p>
-                </div>
-                <div class="table__card">
-                    <img class="table__img table__img_size_letter" src="./images/notes.png" alt="Иконка ноты">
+                </li>
+                <li class="table__card">
+                    <img class="table__img table__img_size_letter" src="<%=require('./images/notes.png')%>" alt="Иконка ноты">
                     <h3 class="table__title">Без музыкальной подготовки</h3>
                     <p class="table__text">Мечта открыть для себя мир музыки осуществима в любом возрасте</p>
-                </div>
-            </div>    
+                </li>
+            </ul>    
         </section>
         <section class="begin" id="prices">
             <h1 class="begin__title">Начни прямо сейчас!</h1>
@@ -89,7 +83,7 @@
             <div class="prices">
                 <div class="price">
                     <div class="price__head">
-                        <img class="price__image" src="./images/clav.jpg" alt="Клавиши">
+                        <img class="price__image" src="<%=require('./images/clav.jpg')%>" alt="Клавиши">
                         <div class="price__rondo">
                             <h1 class="price__num">1200<br><span class="price__num_size_small">рублей/урок</span></h1>
                         </div>
@@ -107,7 +101,7 @@
                 </div>
                 <div class="price">
                     <div class="price__head">
-                        <img class="price__image" src="./images/Interval.jpg" alt="Интервалы">
+                        <img class="price__image" src="<%=require('./images/Interval.jpg')%>" alt="Интервалы">
                         <div class="price__rondo">
                             <h1 class="price__num">3900<br><span class="price__num_size_small">рублей/курс</span></h1>
                         </div>
@@ -125,7 +119,7 @@
                 </div>
                 <div class="price">
                     <div class="price__head">
-                        <img class="price__image" src="./images/teoria.jpg" alt="Ноты">
+                        <img class="price__image" src="<%=require('./images/teoria.jpg')%>" alt="Ноты">
                         <div class="price__rondo">
                             <h1 class="price__num">7450<br><span class="price__num_size_small">рублей/курс</span></h1>
                         </div>
@@ -143,7 +137,7 @@
                 </div>
                 <div class="price">
                     <div class="price__head">
-                        <img class="price__image" src="./images/yellow.jpg" alt="Ноты">
+                        <img class="price__image" src="<%=require('./images/yellow.jpg')%>" alt="Ноты">
                         <div class="price__rondo">
                             <h1 class="price__num">9450<br><span class="price__num_size_small">рублей/курс</span></h1>
                         </div>
@@ -207,35 +201,71 @@
             </div>
             <h2 class="section__subtitle">Только для жителей города Набережные Челны действует постоянная скидка 20% на уроки в оффлайне.</h2>
         </section>
-        <section class="section section_red" id="form">
+        <section class="section section_red" id="svyaz">
             <h1 class="section__title">Напишите нам!</h1>
             <div class="svyaz">
-            <input type="text" name="name" placeholder="*Ваше имя" class="popup__form-input" required>
+            <input type="text" name="name" minlength="2" maxlength="30" placeholder="*Ваше имя" class="popup__form-input" required>
             <input type="tel" name="telefon" placeholder="Номер телефона" class="popup__form-input" required>
-            <input type="email" name="E-mail" placeholder="*E-mail" class="popup__form-input" required>
-            <textarea type="text" name="Others" placeholder="Дополнительная информация (ваш уровень музыкальной подготовки, какой предмет нужно подтянуть)" class="popup__form-input"></textarea>
+            <input type="email" name="email" placeholder="*E-mail" class="popup__form-input" required>
+            <textarea type="text" name="info" placeholder="Дополнительная информация (ваш уровень музыкальной подготовки, какой предмет нужно подтянуть)" class="popup__form-input"></textarea>
             <input type="checkbox" name="soglasie" checked required><span class="popup__form-input popup__form-input_border_none">Согласен(-на) на обработку и хранение моих персональных данных</span>
             <button class="popup__form-submit" type="submit">
                 Отправить
             </button>
             </div>
         </section>
-        <div class="popup popup_hidden" id="svyaz">
+        <div class="popup" id="popup__add">
             <div class="popup__container">
-                <form class="popup__form" name="edit-profile-form">
-                    <button class="popup__close" type="button" title="закрыть"></button>
+                <button class="popup__close" type="button" title="закрыть" aria-label="закрыть"></button>
+                <form class="form" name="add" novalidate>
+                    <h2 class="form__header">Запись на занятие</h2>
+                    <fieldset class="form__set">
+                        <label class="form__field">
+                            <input class="form__input" name="name" type="text" minlength="2" maxlength="30" required>
+                            <span class="form__placeholder place-name-input-placeholder">Ваше имя<span style="color: red;">*</span></span>
+                            <span class="form__input-error place-name-input-error"></span>
+                        </label>
+                        <label class="form__field">
+                            <input class="form__input" name="telefon" type="tel" required>
+                            <span class="form__placeholder place-telefon-input-placeholder">Номер телефона<span style="color: red;">*</span></span>
+                            <span class="form__input-error place-telefon-input-error"></span>
+                        </label>
+                        <label class="form__field">
+                            <input class="form__input" name="email" type="email" required>
+                            <span class="form__placeholder place-email-input-placeholder">E-mail<span style="color: red;">*</span></span>
+                            <span class="form__input-error place-email-input-error"></span>
+                        </label>
+                        <label class="form__field">
+                            <textarea type="text" name="info" placeholder="Дополнительная информация
+                             (ваш уровень музыкальной подготовки, по каким дисциплинам требуется помощь)" class="popup__form-input"></textarea>
+                        </label>
+                        <label class="form__field">
+                            <input type="checkbox" name="soglasie" checked required><span class="popup__form-input popup__form-input_border_none">Согласен(-на) на обработку и хранение моих персональных данных</span>
+                            <span class="form__input-error place-soglasie-input-error"></span>
+                        </label>
+                    </fieldset>
+                    <button class="form__submit" type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+        <!-- <div class="popup">
+            <div class="popup__container">
+                <button class="popup__close" type="button" title="закрыть"></button>
+                <form class="form" name="zapic" novalidate>
+                    
                     <h2 class="popup__form-header">Запись на занятие</h2>
                     <input type="text" name="name" placeholder="*Ваше имя" class="popup__form-input" required>
-                    <input type="tel" name="telefon" placeholder="Номер телефона" class="popup__form-input" required>
+                    <input type="tel" name="telefon" placeholder="*Номер телефона" class="popup__form-input" required>
                     <input type="email" name="E-mail" placeholder="*E-mail" class="popup__form-input" required>
-                    <textarea type="text" name="Others" placeholder="Дополнительная информация (ваш уровень музыкальной подготовки, какой предмет нужно подтянуть)" class="popup__form-input"></textarea>
+                    <textarea type="text" name="Others" placeholder="Дополнительная информация (ваш уровень музыкальной подготовки, какова ваша цель занятий)" class="popup__form-input popup__form-input_height_text-area"></textarea>
                     <br><input type="checkbox" name="soglasie" checked required><span class="popup__form-input popup__form-input_border_none">Согласен(-на) на обработку и хранение моих персональных данных</span>
                     <button class="popup__form-submit" type="submit">
                         Отправить
                     </button>
                 </form>
             </div>
-        </div>
+        </div> -->
+
     </main>
     <footer class="footer">
         <div class="footer__columns">
@@ -248,11 +278,7 @@
                     <li><a class="footer__column-link" href="#">Главная</a></li>
                     <li><a class="footer__column-link" href="#courses">Курсы</a></li>
                     <li><a class="footer__column-link" href="#prices">Цены</a></li>
-<<<<<<< HEAD
                     <li><a class="footer__column-link" href="#form">Запись</a></li>
-=======
-                    <li><a class="footer__column-link" href="#svyaz">Запись</a></li>
->>>>>>> 08bf03d54a8a9683a98fc189d8edc72da82ef03c
                 </ul>
             </nav>
             <nav class="footer__column footer__column_content_social">
@@ -260,13 +286,12 @@
                 <ul class="footer__column-links">
                     <li>
                         <a class="footer__column-link" href="https://vk.com/" target="_blank">
-                            <img class="footer__social-icon" src="images/vk_color_white.svg" alt="ВКонтакте">ВКонтакте</a>
+                            <img class="footer__social-icon" src="<%=require('./images/vk_color_white.svg')%>" alt="ВКонтакте">ВКонтакте</a>
                     </li>
                 </ul>
             </nav>
         </div>
         <p class="footer__author">&copy; 2022. Онлайн теоретик</p>
     </footer>
-    <script src="script/index.js"></script>
 </body>
 </html>
