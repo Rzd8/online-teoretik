@@ -1,0 +1,4 @@
+.form__field_type_row {
+    flex-direction: row;
+    align-items: center;
+}

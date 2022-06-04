@@ -1,10 +1,7 @@
 import './index.css';
-import { FormValidator, PopupWithForm, Section, UserInfo} from "../components";
+import { FormValidator, PopupWithForm} from "../components";
 import {
-    formConfig,
-    AddButton,
-    userInfoInputSelectors,
-    userInfoSelectors
+    formConfig
 } from "../utils/constants.js";
 import '../pages/index.css';
 
@@ -19,40 +16,40 @@ import '../pages/index.css';
         });
     }
 
-    function setUserInfoInputs(inputData) {
-        userInfoInputSelectors.profile_name.value = inputData.profile_name;
-        userInfoInputSelectors.profile_job.value = inputData.profile_job;
-    }
-
     const formValidators = {};
     
-    const placeList = new Section({
-            items: initialPlaces.reverse(),
-            renderer: createCard
-        },
-        '.places');
-    placeList.renderItems();
-
-    const userInfo = new UserInfo(userInfoSelectors);
-    const profileEditForm = new PopupWithForm(
-        '#popup__edit-profile',
-        (inputsData) => userInfo.setUserInfo(inputsData));
-    profileEditForm.setEventListeners();
-    profileEditButton.addEventListener('click', () => {
-        setUserInfoInputs(userInfo.getUserInfo());
-        formValidators['edit_profile'].resetValidation();
-        profileEditForm.open();
-    });
-
     const addCardForm = new PopupWithForm(
-        '#popup__add')
+        '#popup__add',
+        (entry) => {
+            fetch('http://online-teoretik.shme.xyz/api/v1/entries/', {
+                method: 'POST', 
+                body: JSON.stringify(entry),
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': 'Token 26fa8cf190dc17b934e2b5365232b4ff9cc79ea6'
+                }
+            }).then(res => {
+               alert('Заявка принята! В ближайшее время мы с Вами свяжемся.');
+            }).catch(error => alert(error));
+        });
+
+    const buttonPopupList = document.querySelectorAll('.add-button');
 
     addCardForm.setEventListeners();
-    addButton.addEventListener('click',
-        () => {
+    buttonPopupList.forEach((buttonPopup) => {
+       buttonPopup.addEventListener('click',
+        (evt) => {
             formValidators['add'].resetValidation();
             addCardForm.open();
-        });
+            console.log(evt.target.classList);
+            if (evt.target.classList.contains('.add-button_block_price')) {
+                const courseName = evt.target.closest('.price__content')
+                    .querySelector('.price__title').textContent;
+                    //todo add to notes in popup form 
+            console.log(courseName);
+            }
+        }) 
+    });
 
     enableValidation(formConfig);
 })();

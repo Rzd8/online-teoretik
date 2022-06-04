@@ -1,0 +1,12 @@
+.about {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 565px) {
+    .about {
+    grid-template-columns: repeat(1fr);
+    align-content: space-between;
+    }
+}

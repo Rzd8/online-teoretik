@@ -1,0 +1,10 @@
+.form__text {
+    font-size: 12px;
+    line-height: 14px;
+    color: #979797;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin: 0;
+}

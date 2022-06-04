@@ -8,7 +8,7 @@ export const userInfoInputSelectors = {
     profile_job: document.querySelector('input[name=profile_job]'),
 }
 
-export const addButton = document.querySelector('.add-button');
+
 
 export const formConfig = {
     fieldSelector: '.form__field',

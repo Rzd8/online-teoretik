@@ -1,0 +1,29 @@
+.form__checkbox-item {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #007DFF;
+    display: block;
+    position: relative;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: transparent;
+    margin: 0 8px 0 0;
+}
+
+.form__checkbox-item::before {
+    content: '';
+    height: 9px;
+    width: 7px;
+    color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: transparent center no-repeat;
+    transform: translate(-50%, -50%); /* Расположим элемент по центру */
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+  }
