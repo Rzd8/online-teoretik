@@ -1,5 +1,7 @@
 .about__photo {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    background-image: url(../../../images/kluch-noty.png);
+    background-size: cover;
+
 }

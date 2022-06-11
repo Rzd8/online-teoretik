@@ -26,14 +26,14 @@
         <h1 class="header__title" >Обучение теории<br>музыки<br>и&nbsp;сольфеджио</h1>
     </header> 
     <main class="content">
-        <section class="about" id="about">
-            <div class="about__text-box">
-                <h2 class="section__title about__title">Обо мне</h2>
-                <p class="section__subtitle section__subtitle_theme_bright">Меня зовут Резеда Махмутовна, я преподаватель музыкально-теоретических дисциплин, выпускница теоретико-композиторского факультета Казанской государственной консерватории им. Н. Г. Жиганова по специальности музыковедение.</p>
+        <section class="section" id="about">
+            <h2 class="section__title">Обо мне</h2>
+            <div class="about">
+                <p class="about__text-box">Меня зовут Резеда Махмутовна,<br>я преподаватель музыкально-теоретических дисциплин, выпускница теоретико-композиторского факультета Казанской государственной консерватории им. Н. Г. Жиганова по специальности музыковедение.</p>
+                <div class="about__photo-box">
+                    <img class="about__photo" src="<%=require('./images/my-photo.png')%>" alt="Настоящий теоретик">
+                </div> 
             </div>
-            <div class="about__photo-box section__title">
-                <img class="about__photo" src="<%=require('./images/my-photo.jpg')%>" alt="Настоящий теоретик">
-            </div> 
         </section>
         <section class="section" id="courses">
             <h2 class="section__title">Индивидуальные уроки</h2>
@@ -292,7 +292,7 @@
                     </li>
                     <li>
                         <a class="footer__column-link" href="https://telegram.org/" target="_blank">
-                            <img class="footer__social-icon" style="background-color: rgba(0, 0, 0, 0.5);" src="<%=require('./images/telegram-logo.png')%>" alt="Телеграм">Telegram</a>
+                            <img class="footer__social-icon" src="<%=require('./images/telegram-logo.png')%>" alt="Телеграм">Telegram</a>
                     </li>
                 </ul>
             </nav>
