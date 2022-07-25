@@ -1,0 +1,16 @@
+.form_block_header {
+    width: 70%;
+    margin: -20vh auto 5%;
+    border-radius: 5px;
+    padding: 0 20px;
+    background-color: rgb(248, 248, 248);
+    box-shadow: 0 0 20px 10px rgb(103 125 143 / 15%);;
+}
+
+@media screen and (max-width: 767px) {
+    .form_block_header {
+    margin: -20vh auto 5%;
+    width: 80%;
+    }
+ }
+ 

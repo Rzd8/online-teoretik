@@ -1,11 +1,16 @@
 .about__photo-box {
    margin: 0 auto;
-   border-radius: 50%;
    overflow: hidden;
+   background-image: url(../../../images/kluch-noty.png);
+   background-size: cover;
+   border-radius: 50%;
+
 }
 
 @media screen and (max-width: 705px) {
    .about__photo-box {
    margin-top: 30px;
+   order: -1;
    }
 }
+

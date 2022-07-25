@@ -10,7 +10,7 @@
    }
 }
  
- .header__title {
+.header__title {
    width: 80%;
    font-family: 'Mon', Helvetica, Arial, sans-serif;
    font-size: 60px;
@@ -35,8 +35,8 @@
    }
 }
 
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 583px) {
    .header__title {
-      font-size: 36px;
+      font-size: 34px;
    }
 }

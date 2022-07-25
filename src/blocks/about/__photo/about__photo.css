@@ -1,7 +1,16 @@
 .about__photo {
     width: 350px;
     height: 350px;
-    background-image: url(../../../images/kluch-noty.png);
-    background-size: cover;
-
+    transition: 1s;
 }
+
+.about__photo:hover {
+    transform: scale(1.1);
+ }
+
+ @media screen and (max-width: 705px) {
+    .about__photo {
+        width: 250px;
+        height: 250px;
+    }
+ }

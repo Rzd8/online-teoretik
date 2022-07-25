@@ -41,6 +41,7 @@
 @import url(../blocks/item/__pr-bt/item__pr-bt.css);
 @import url(../blocks/add-button/add-button.css);
 @import url(../blocks/add-button/_block_price/add-button_block_price.css);
+@import url(../blocks/add-button/_block_header/add-button_block_header.css);
 @import url(../blocks/button-otvet/button-otvet.css);
 @import url(../blocks/cards/cards.css);
 @import url(../blocks/cards/__content/cards__content.css);
@@ -113,6 +114,7 @@
 @import url(../blocks/form/__field/_type_row/form__field_type_row.css);
 @import url(../blocks/form/__text/form__text.css);
 @import url(../blocks/form/__checkbox/form__checkbox.css);
+@import url(../blocks/form/_block/form_block_header.css);
 @import url(../blocks/form/__checkbox-item/form__checkbox-item.css);
 
 
